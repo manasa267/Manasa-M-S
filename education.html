@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education - Manasa M S</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  body {
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #00eaff;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .edu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .edu-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid #00eaff;
+  }
+
+  .edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+
+  h2.edu-title {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+
+  p.edu-details {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .nav-buttons a {
+    padding: 12px 30px;
+    background-color: #1e3a8a;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-buttons a:hover {
+    background-color: #00eaff;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 500px) {
+    h1 { font-size: 2rem; }
+    h2.edu-title { font-size: 1.3rem; }
+    p.edu-details { font-size: 0.95rem; }
+    .nav-buttons { flex-direction: column; gap: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>My Education</h1>
+
+<div class="edu-container">
+  <div class="edu-card">
+    <h2 class="edu-title">10th Standard</h2>
+    <p class="edu-details">Govt Girls High School, Tiptur – <strong>94%</strong></p>
+  </div>
+
+  <div class="edu-card">
+    <h2 class="edu-title">PUC / 12th Standard</h2>
+    <p class="edu-details">Govt Boys College, Tiptur – <strong>92%</strong></p>
+  </div>
+
+  <div class="edu-card">
+    <h2 class="edu-title">Engineering – Malnad College of Engineering, Hassan</h2>
+    <p class="edu-details">
+      Currently in 5th Semester (3rd Year)<br>
+      Semester 1 – 9.10 CGPA<br>
+      Semester 2 – 8.90 CGPA<br>
+      Semester 3 – 9.00 CGPA<br>
+      Semester 4 – 10.00 CGPA<br>
+      <strong>Overall CGPA: 9.20</strong>
+    </p>
+  </div>
+
+  <div class="edu-card">
+    <h2 class="edu-title">Languages Known</h2>
+    <p class="edu-details">Kannada & English</p>
+  </div>
+</div>
+
+<div class="nav-buttons">
+  <a href="about.html"><i class="fas fa-arrow-left"></i> Back</a>
+  <a href="skills.html">Next <i class="fas fa-arrow-right"></i></a>
+</div>
+
+</body>
+</html>

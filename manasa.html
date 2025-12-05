@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manasa Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #000;
+        color: #fff;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: #000;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        box-sizing: border-box;
+    }
+
+    .header h2 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    .nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 15px;
+        white-space: nowrap;
+    }
+
+    .home-section {
+        margin-top: 140px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+
+    /* PHOTO FRAME */
+    .photo-frame {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* DOWNLOAD BUTTON (Outside Image) */
+    .resume-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-download {
+        margin-top: 25px;
+        padding: 12px 22px;
+        background: #00eaff;
+        color: black;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .resume-download:hover {
+        background: #c5ffff;
+    }
+
+    .details {
+        width: 45%;
+        min-width: 280px;
+    }
+
+    .details h1 {
+        font-size: 45px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .details p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .know-btn {
+        margin-top: 20px;
+        padding: 18px 35px;
+        font-size: 24px;
+        background: #fff;
+        color: #000;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .know-btn:hover {
+        background: #c5c5c5;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Manasa M S</h2>
+        <div class="nav">
+            <a href="#contact">Contact Me</a>
+        </div>
+    </div>
+
+    <section class="home-section">
+
+        <!-- LEFT: IMAGE + DOWNLOAD BELOW -->
+        <div class="resume-section">
+
+            <div class="photo-frame">
+                <img src="https://res.cloudinary.com/dsudelzwz/image/upload/v1764815997/IMG-20251203-WA0032_sxzpun.jpg" alt="Manasa Photo">
+            </div>
+
+            <!-- DOWNLOAD BUTTON OUTSIDE IMAGE -->
+            <a href="RESUMEMANASA.pdf" download class="resume-download">
+                ⬇ Download Resume
+            </a>
+
+        </div>
+
+        <!-- RIGHT: DETAILS -->
+        <div class="details">
+            <h1>Hello, I'm <span style="color:#00eaff;">Manasa M S</span></h1>
+            <p>A passionate <b>CSE student</b> exploring Web Development, UI/UX, Data Visualization,
+            Excel Analytics, and DBMS Design.</p>
+
+            <button class="know-btn" onclick="window.location.href='knowmore.html'">
+                Know About Me
+            </button>
+        </div>
+
+    </section>
+
+</body>
+</html>

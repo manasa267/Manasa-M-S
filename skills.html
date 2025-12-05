@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills - Manasa M S</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    min-height: 100vh;
+    color: #fff;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #000;
+    border-bottom: 2px solid #444;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header h2 {
+    font-size: 28px;
+    color: #00eaff;
+    letter-spacing: 2px;
+  }
+
+  .header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+  }
+
+  .header .nav a i {
+    margin-right: 5px;
+  }
+
+  .header .nav a:hover {
+    color: #00eaff;
+  }
+
+  /* Container */
+  .container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 100px; /* space for header */
+    padding: 0 20px;
+  }
+
+  /* Left section - skills */
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1.2;
+    min-width: 350px;
+  }
+
+  .skill-card {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 25px 20px 20px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  .skill-card h3 {
+    color: #333333;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .skill {
+    margin-top: 10px;
+  }
+
+  .skill strong {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  .skill strong i {
+    margin-right: 10px;
+    color: #ff4444;
+  }
+
+  .bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 18px;
+  }
+
+  .bar i {
+    display: block;
+    height: 100%;
+    background-color: #ff4444;
+    width: 0;
+    border-radius: 12px;
+    transition: width 1s ease-in-out;
+  }
+
+  /* Right section - theory */
+  .theory {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .theory h4 {
+    color: #ff4444; /* red headings */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .theory p {
+    font-size: 0.95rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  /* Navigation buttons */
+  .nav-buttons {
+    display: flex;
+    justify-content: center; /* center both buttons */
+    gap: 20px; /* space between buttons */
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+  }
+
+  .nav-buttons a {
+    padding: 10px 25px;
+    background-color: #ff4444;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-buttons a:hover {
+    background-color: #fff;
+    color: #ff4444;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 900px) {
+    .container { flex-direction: column; }
+    .skills-section { flex: 1; gap: 20px; }
+    .theory { flex: 1; margin-top: 20px; }
+    .nav-buttons { flex-direction: column; gap: 10px; }
+    .nav-buttons a { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h2>SKILLS</h2>
+    <div class="nav">
+      <a href="manasa.html"><i class="fas fa-home"></i> Home</a>
+      <a href="knowmore.html"><i class="fas fa-lightbulb"></i> Index</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Left Section -->
+    <div class="skills-section">
+      <!-- Hardware Skills -->
+      <div class="skill-card">
+        <h3>Hardware Skills</h3>
+        <div class="skill"><strong><i class="fas fa-microchip"></i> Raspberry Pi</strong><div class="bar"><i style="width:70%"></i></div></div>
+        <div class="skill"><strong><i class="fas fa-cogs"></i> Arduino</strong><div class="bar"><i style="width:60%"></i></div></div>
+        <div class="skill"><strong><i class="fas fa-desktop"></i> Computer Assembly</strong><div class="bar"><i style="width:80%"></i></div></div>
+      </div>
+
+      <!-- Software Skills -->
+      <div class="skill-card">
+        <h3>Software Skills</h3>
+        <div class="skill"><strong><i class="fab fa-html5"></i> HTML</strong><div class="bar"><i style="width:65%"></i></div></div>
+        <div class="skill"><strong><i class="fab fa-python"></i> Python</strong><div class="bar"><i style="width:70%"></i></div></div>
+        <div class="skill"><strong><i class="fas fa-database"></i> SQL</strong><div class="bar"><i style="width:90%"></i></div></div>
+        <div class="skill"><strong><i class="fas fa-chart-line"></i> Power BI</strong><div class="bar"><i style="width:70%"></i></div></div>
+        <div class="skill"><strong><i class="fab fa-js"></i> JavaScript</strong><div class="bar"><i style="width:60%"></i></div></div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card">
+        <h3>Communication & Soft Skills</h3>
+        <div class="skill"><strong><i class="fas fa-users"></i> Teamwork</strong><div class="bar"><i style="width:90%"></i></div></div>
+        <div class="skill"><strong><i class="fas fa-comments"></i> Communication</strong><div class="bar"><i style="width:85%"></i></div></div>
+        <div class="skill"><strong><i class="fas fa-lightbulb"></i> Problem Solving</strong><div class="bar"><i style="width:80%"></i></div></div>
+      </div>
+    </div>
+
+    <!-- Right Section - detailed knowledge -->
+    <div class="theory">
+      <h4>Hardware Knowledge</h4>
+      <p><strong>Raspberry Pi:</strong> I can set up, program, and troubleshoot Raspberry Pi projects, integrating sensors, modules, and IoT components effectively.</p>
+      <p><strong>Arduino:</strong> I have experience in creating embedded systems, controlling motors, LEDs, and sensors, and writing optimized Arduino code.</p>
+      <p><strong>Computer Assembly:</strong> I am proficient in assembling PCs, configuring hardware, and ensuring optimal performance and troubleshooting issues.</p>
+
+      <h4>Software Knowledge</h4>
+      <p><strong>HTML:</strong> I create responsive web pages and structure content with semantic HTML for accessibility and performance.</p>
+      <p><strong>Python:</strong> I write scripts, automate tasks, and develop data processing and analytics solutions.</p>
+      <p><strong>SQL:</strong> I design, query, and manage databases efficiently, extracting meaningful insights from data.</p>
+      <p><strong>Power BI:</strong> I create interactive dashboards and reports, visualize data effectively, and enable decision-making through analytics.</p>
+      <p><strong>JavaScript:</strong> I develop dynamic web applications, implement client-side logic, and enhance user interaction.</p>
+
+      <h4>Communication & Soft Skills</h4>
+      <p><strong>Teamwork:</strong> I collaborate effectively with peers, coordinate tasks, and contribute actively to project success.</p>
+      <p><strong>Communication:</strong> I explain technical concepts clearly, present ideas efficiently, and document work properly.</p>
+      <p><strong>Problem Solving:</strong> I analyze problems, develop multiple solutions, and implement the most efficient approach in projects.</p>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <a href="education.html"><i class="fas fa-arrow-left"></i> Back</a>
+    <a href="project.html">Next <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <script>
+    const bars = document.querySelectorAll('.bar i');
+    bars.forEach(bar => {
+      const width = bar.getAttribute('style').match(/\d+%/)[0];
+      setTimeout(() => { bar.style.width = width; }, 100);
+    });
+  </script>
+</body>
+</html>

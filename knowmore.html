@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Know More - Manasa M S</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    body{
+        font-family:'Poppins',sans-serif;
+        background:#000;
+        color:white;
+        padding:20px;
+    }
+
+    /* Top Navigation */
+    .top-nav{
+        position:absolute;
+        top:15px;
+        right:20px;
+        display:flex;
+        gap:15px;
+    }
+    .top-nav a{
+        color:white;
+        font-size:1.1rem;
+        text-decoration:none;
+        font-weight:500;
+    }
+    .top-nav a:hover{
+        color:red;
+    }
+
+    h1{
+        text-align:center;
+        font-size:2.3rem;
+        color:#ff6b6b;
+        margin-top:60px;
+        margin-bottom:30px;
+        letter-spacing:1px;
+    }
+
+    .container{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        width:100%;
+        max-width:700px;
+        margin:auto;
+    }
+
+    .option{
+        background:white;
+        color:black;
+        border-left:6px solid red;
+        padding:18px 20px;
+        font-size:1.2rem;
+        border-radius:10px;
+        text-decoration:none;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        transition:0.3s;
+    }
+
+    .option:hover{
+        transform:translateY(-4px);
+        background:#ffecec;
+        box-shadow:0 8px 20px rgba(255,0,0,0.3);
+    }
+
+    .option i{
+        color:red;
+        font-size:1.3rem;
+        transition:0.3s;
+    }
+
+    .option:hover i{
+        color:darkred;
+    }
+
+    @media(max-width:600px){
+        h1{font-size:1.9rem;}
+        .option{font-size:1.05rem;}
+    }
+</style>
+</head>
+<body>
+
+<!-- Header Navigation -->
+<div class="top-nav">
+  <a href="manasa.html">Home</a>
+  <a href="knowmore.html">Index</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1>Know More</h1>
+
+<div class="container">
+
+    <a href="about.html" class="option">
+        About <i class="fas fa-user"></i>
+    </a>
+
+    <a href="education.html" class="option">
+        Education <i class="fas fa-graduation-cap"></i>
+    </a>
+
+    <a href="skills.html" class="option">
+        Skills <i class="fas fa-lightbulb"></i>
+    </a>
+
+    <a href="project.html" class="option">
+        Projects <i class="fas fa-folder-open"></i>
+    </a>
+
+    <a href="certifications.html" class="option">
+        Certifications <i class="fas fa-certificate"></i>
+    </a>
+
+    <a href="achievements.html" class="option">
+        Achievements <i class="fas fa-trophy"></i>
+    </a>
+
+    <a href="resume.html" class="option">
+        Resume <i class="fas fa-file-alt"></i>
+    </a>
+
+    <a href="contact.html" class="option">
+        Contact <i class="fas fa-envelope"></i>
+    </a>
+
+</div>
+
+</body>
+</html>

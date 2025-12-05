@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Manasa M S</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    min-height:100vh;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  /* Top Right Navigation */
+  .top-nav{
+    position:absolute;
+    top:15px;
+    right:20px;
+    display:flex;
+    gap:15px;
+  }
+  .top-nav a{
+    color:white;
+    font-size:1.1rem;
+    text-decoration:none;
+  }
+  .top-nav a:hover{color:red;}
+
+  .card{
+    background:#fff;
+    border:2px solid red;
+    border-radius:20px;
+    padding:40px;
+    max-width:800px;
+    width:100%;
+    box-shadow:0 8px 20px rgba(255,0,0,0.2);
+  }
+
+  .card h2{
+    color:red;
+    font-size:2.2rem;
+    text-align:center;
+    border-bottom:2px solid red;
+    display:inline-block;
+    padding-bottom:5px;
+    margin-bottom:25px;
+  }
+
+  .card p, .card ul li{
+    color:#000;
+    font-size:1.1rem;
+    line-height:1.8;
+  }
+
+  ul{padding-left:25px;margin-bottom:20px;}
+
+  .nav-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+  }
+  .nav-buttons a{
+    padding:10px 25px;
+    background:red;
+    color:#fff;
+    border-radius:8px;
+    text-decoration:none;
+  }
+  .nav-buttons a:hover{
+    background:#fff;
+    color:red;
+  }
+</style>
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <div class="top-nav">
+      <a href="manasa.html">Home</a>
+      <a href="knowmore.html">Index</a>
+      <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="card">
+    <h2>About Me</h2>
+
+    <p>
+      I’m Manasa, a passionate Computer Science Engineering student currently in 5th semester at Malnad College of Engineering, Hassan. I enjoy solving problems, building creative digital solutions, and learning through real-world projects.
+    </p>
+
+    <h3 style="color:red;margin-top:20px;">My Interests</h3>
+    <ul>
+      <li>DBMS</li>
+      <li>DSA</li>
+      <li>DAA</li>
+      <li>Power BI</li>
+      <li>Web Development</li>
+      <li>Digital Interactions</li>
+    </ul>
+
+    <h3 style="color:red;">Hobbies</h3>
+    <ul>
+      <li>Reading Books</li>
+      <li>Listening to Music</li>
+      <li>Traveling</li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a href="knowmore.html"><i class="fas fa-arrow-left"></i> Back</a>
+      <a href="education.html">Next <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</body>
+</html>
